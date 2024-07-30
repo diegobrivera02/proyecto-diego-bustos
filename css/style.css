@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    text-transform: capitalize;
+    background-color: black;
+}
+
+main {
+    background-color: yellow;
+}
+
+main p {
+    color: black;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: yellow;
+}
+
+nav {
+    color: yellow;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    list-style: none;
+}
+
+h1 {
+    text-align: left;
+    font-size: xx-large;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    margin: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif
+}
+
+h3{margin: 30px;}
+
+.imagenes-noticias {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.nav-bar {
+    color: yellow;
+    list-style: none;
+    font-size: large;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 20px;
+}
+
+.nav-bar li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: large;
+    text-transform: capitalize;
+    margin: 20px;
+
+}
+
+.tamano-logo-foot {width: 50px; height: 50px; border-radius: 29px;}
+
+.grid-redes-sociales1{display: grid;
+    width: 100%;
+    height: 30px;  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-template-areas:
+    "youtube youtubelogo discord discordlogo"
+    "redes redes2 logo logo"
+    ;}
+
+
+
+.tamano-youtube {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.area-discord{grid-area:discord;}
+
+.tamano-discord {
+    width: 200px;
+    height: 110px;
+    grid-area: discordlogo;
+}
+
+
+.grid-redes-sociales1 .area-redes-sociales img{ width: 20px; height: 20px;grid-area: redeslogo; margin: 8px; justify-content: center;}
+
+
+.area-logo{grid-area: logo;margin: 20px; align-items: end;}
+
+
+
+.pseudoclase p::selection {
+    background-color: black color yellow;
+}
+
+.gamer-nostalgico {
+    margin-left: 450px;
+    border-radius: 200px;
+    width: 20%;
+    height: 20%;
+}
+
+.presentacion { width: 100%; height: 31.25rem; display: flex; justify-content: center; align-items: center;}
+
+
+.buscador {
+    margin-left: 910px
+}
+
+.grid-noticias{ display: grid;
+                width: 100%;
+                margin: 25px;
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 20px;}
+
+.grid-resenas{      display: grid;
+                    width: 100%;
+                    margin: 30px;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px; }
+
+.grid-retro{            display: grid;
+                        width: 100%;
+                        margin: 30px;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(3, 1fr); 
+                        gap: 20px;
+                        align-content: center;}
+    
+
+.contenedor-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 70%;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(243, 243, 146);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 60%;
+}
+
+.card .card-img img {
+    width: 50%;
+    height: 100%;
+    ;
+    border-radius: 10px;
+    object-fit: fill
+}
+
+.card .card-info p{
+    width: 95%;
+    height: 50%;
+    text-align:right;
+}
+
+.card-1 {width: 92%;height: 100%;}
+.card-1 .card-img img{width: 50%; height: 100%;}
+
+
+@media (max-width:768px){
+    header{background-color: black;flex-direction: column;}
+    main{background-color:yellow (0, 0, 0); width: 100%;}
+
+    .gamer-nostalgico {
+        margin-left: 40%;
+        border-radius: 200px;
+        width: 20%;
+        height: 20%;}
+
+        .imagenes-noticias {
+            width: 300px;
+            height: 160px;
+            border-radius: 30px;
+        }
+    }
+    
+@media (max-width:320px){
+    header{background-color: black;flex-direction: column;width: 100%; height: 150px;}
+    main{background-color:yellow (0, 0, 0); width: 100%;}
+
+    .gamer-nostalgico {
+        margin-left: 30%;
+        margin-top: 5%;
+        border-radius: 200px;
+        width: 130px;
+        height: 100%;}
+
+        .imagenes-noticias {
+            width: 300px;
+            height: 160px;
+            border-radius: 30px;
+        }
+
+        .nav-bar {
+            visibility: hidden;
+            color: black;
+            list-style: none;
+            font-size: large;
+            text-transform: uppercase;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            margin: 20px;
+        }
+        
+        .nav-bar li a { visibility: hidden;
+            color: yellow;
+            text-decoration: none;
+            font-size: large;
+            text-transform: capitalize;
+        
+        }
+
+        .grid-noticias{ display: grid;
+            width: 100%;
+            margin: 25px;
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 20px;} 
+
+
+footer {width: 50%; height: 10px;}
+
+footer h3{display: none;}
+
+.area-logo p{display: none;}
+
+.tamano-youtube {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tamano-discord {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right:50px;
+}
+
+.area-redes-sociales a img{display: none;}
+
+.area-logo a img{margin-left: -15%;}
+
+}
+
+
