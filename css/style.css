@@ -149,9 +149,9 @@ img:hover {
 .grid-home-recientes {
     display: grid;
     width: 100%;
-    margin: 10px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(17, 100px);
+    padding-left: 30px;
 }
 
 .grid-home-recientes img {
@@ -165,8 +165,7 @@ img:hover {
 }
 
 .encabezado1-reciente {
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column:1/6;
 }
 
 .img1-reciente {
@@ -379,9 +378,10 @@ img:hover {
 .grid-noticias {
     display: grid;
     width: 100%;
-    margin: 30px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 0.2fr);
+    grid-template-rows: repeat(6, 0.2fr);
+    text-align: center;
+    padding-left: 30px;
 
 }
 
@@ -392,97 +392,141 @@ img:hover {
 }
 
 .noticias-1 {
-    grid-column: 4/9;
-    grid-row: 1/2;
-    margin-left: 40px;
+    grid-column: 3/9;
+    grid-row: 2;
 }
 
-.noticias-1 p {
-    text-align: center;
-}
-
+.noticias-1 img{object-fit: cover;}
 
 .noticias-2 {
-    grid-column: 1/6;
-    grid-row: 2/3;
+    grid-column: 1/5;
+    grid-row: 3;
     margin-top: 60px;
     margin-left: 40px;
 }
 
 .noticias-3 {
     grid-column: 7/12;
-    grid-row: 2/3;
-    margin-top: 60px;
-    margin-left: 10px;
-}
-
-.noticias-4 {
-    grid-column: 4/9;
     grid-row: 3;
     margin-top: 60px;
     margin-left: 10px;
 }
 
-.noticias-5 {
-    grid-column: 7/12;
-    grid-row: 4/5;
+.noticias-4 {
+    grid-column: 3/9;
+    grid-row: 4;
     margin-top: 60px;
     margin-left: 10px;
 }
 
+.noticias-4 img{object-fit: cover;}
+
+.noticias-5 {
+    grid-column: 7/12;
+    grid-row: 5;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.noticias-5 img {object-fit: cover;}
+
 .noticias-6 {
-    grid-column: 1/6;
-    grid-row: 4/5;
+    grid-column: 1/5;
+    grid-row: 5;
     margin-top: 60px;
     margin-left: 40px;
 }
+
+.noticias-6 img{object-fit: cover;}
 
 /** grid resenas**/
 
 .grid-resenas {
     display: grid;
     width: 100%;
-    margin: 60px;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    padding-left: 80px;
+    padding-bottom: 20px;
 }
 
 /** grid retro**/
 
 .grid-retro {
-    display: grid;
-    width: 100%;
-    margin: 30px;
+    display:grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 0.2fr);
+    width: 100%;
     gap: 20px;
-
+    padding:50px;
+    padding-top: 0px;
 }
 
 .grid-retro img {
-    width: 55%;
-    height: 70%;
+    width: 60%;
     object-fit: contain;
 }
 
 .grid-retro p {
-    font-size: medium;
+    font-size: medium;text-align:justify;
 }
 
-h2 img {
-    width: 20%;
-    border-radius: 0%;
-}
 
 h2 img:hover {
     filter: none;
 }
+
+.nintendo-logo {grid-column: 2/5; grid-row: 2; width: 50%;}
+
+.nes {grid-column:1; grid-row: 3;}
+
+.snes{grid-column: 2; grid-row: 3;}
+
+.game-boy {grid-column: 3; grid-row: 3;width: 55%;}
+
+.nintendo64 {grid-column: 4; grid-row: 3;}
+
+.gba {grid-column: 1; grid-row: 4;width: 110%;}
+
+.gamecube {grid-column: 2; grid-row: 4;width: 130%;}
+
+.nds {grid-column: 3; grid-row: 4;}
+
+.wii {grid-column: 4; grid-row: 4;width: 75%;}
+
+.playstation-logo {grid-column: 2/5; grid-row: 5;width: 50%;}
+
+.ps1 {grid-column: 1;grid-row: 6;width: 140%;}
+
+.ps2 {grid-column: 2;grid-row: 6;width: 140%;}
+
+.psp {grid-column: 3;grid-row: 6;}
+
+.ps3 {grid-column: 4;grid-row: 6;width: 60%;}
+
+.sega-logo {grid-column: 2/5;grid-row: 7; width: 50%;}
+
+.genesis {grid-column: 1;grid-row: 8;width: 140%;}
+
+.gamegear {grid-column: 2;grid-row: 8;}
+
+.saturn {grid-column: 3;grid-row: 8;}
+
+.dreamcast {grid-column: 4;grid-row: 8;}
+
+.logo-xbox {grid-column: 2/5; grid-row: 9;width: 50%;}
+
+.xbox-1 {grid-column: 1;grid-row: 10;width: 150%;}
+
+.xbox-360 {grid-column: 2;grid-row: 10;width: 140%;}
+
+.wonderswan {grid-column: 3;grid-row: 10;}
 
 /** grid nosotros **/
 
 .grid-nosotros {
     display: grid;
     width: 100%;
-    margin: 10px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 100px);
 }
@@ -712,7 +756,6 @@ h2 img:hover {
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 10px;
     }
 
     h1{width: 100%; font-size: 1.2rem; height: 10%;}
@@ -891,9 +934,21 @@ h2 {width: 100%;font-size: 1.2rem;}
         width: 100%;
         height: 100%;
         gap: 5px;
+        padding: 10%;
     }
 
-    .grid-noticias img {border-radius: 0;}
+    .grid-noticias img {border-radius: 10px;}
+
+
+        /** PAGINA RESENAS **/
+
+        .grid-resenas {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 0px;
+            padding: 20px;
+        }
 
 
     /** NOSOTROS 320**/
@@ -947,18 +1002,17 @@ h2 {width: 100%;font-size: 1.2rem;}
 
     /** RETRO **/
 
-.grid-retro {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 30px;
-    gap: 20px;
-
-}
+    .grid-retro {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        padding-bottom: 10px;
+    }
 
 .grid-retro img {
-    width: 55%;
-    height: 70%;
+    width: 100%;
     object-fit: contain;
 }
 
