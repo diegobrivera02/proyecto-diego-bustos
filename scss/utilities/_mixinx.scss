@@ -1,0 +1,22 @@
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin flex ($direction,$wrap,$justify,$align,$gap  ){
+    display: flex;
+    flex-direction:$direction ;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid(){
+    display: grid;
+    
+}

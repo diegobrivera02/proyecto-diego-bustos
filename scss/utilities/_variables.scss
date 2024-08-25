@@ -1,0 +1,30 @@
+$primary-color: black;
+$secondary-color: yellow;
+$font-family: "Poppins", sans-serif;
+
+body {
+    text-transform: capitalize;
+}
+
+header {
+    background-color: $primary-color;
+    background-image: url(../assets/img/fondo\ luigi.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    font-family: $font-family;
+}
+
+main {
+    background-color: whitesmoke;
+    background-image: url(../assets/img/fondo\ main\ 2.jpg);
+}
+
+main p {
+    color: black;
+    font-size: 14px;
+    font-family: $font-family;
+    font-weight: bold;
+}
+
+// Sigue el resto del código con las mismas variables
